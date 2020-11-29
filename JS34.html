@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        person = new Object();
+        person1 = {};
+
+    </script>
+    <script>
+        let person3 = {
+            firstName: "Иван",
+            lastName: "Петров",
+            id: 5566,
+            fullName: function() {
+                return this.firstName + "" + this.lastName;
+            }
+        }
+
+        myName = person3.firstName;
+        alert(myName); //Обращение к свойству объекта
+
+        name = person3.fullName();
+        alert(name); //Обращение к методу объекта
+    </script>
+</body>
+</html>
